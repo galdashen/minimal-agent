@@ -6,13 +6,13 @@ tools = [
         "type": "function",
         "function": {
             "name": "run_command",
-            "description": "Run a pwsh command in user's terminal and return the output.",
+            "description": "在用户的电脑上运行 pwsh 命令并获取输出",
             "parameters": {
                 "type": "object",
                 "properties": {
                     "command": {
                         "type": "string",
-                        "description": "The pwsh command to run.",
+                        "description": "你需要运行的 pwsh 命令",
                     },
                 },
                 "required": ["command"],
@@ -41,7 +41,7 @@ client = OpenAI(
 messages = [
     {
         "role": "system",
-        "content": "You are a helpful assistant who can run pwsh commands in user's terminal to assist with coding tasks.",
+        "content": "你可以在用户的电脑上运行 pwsh 命令来帮用户完成代码任务",
     }
 ]
 
