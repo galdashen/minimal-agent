@@ -64,9 +64,9 @@ while True:
         content = response.content
         tool_calls = response.tool_calls
         if reasoning_content:
-            print("Thought:", reasoning_content)
+            print(f"Thought: {reasoning_content}")
         if content:
-            print("Response:", content)
+            print(f"Response: {content}")
         messages.append(response)
         if response.tool_calls is None:
             break
