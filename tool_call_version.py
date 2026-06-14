@@ -71,7 +71,7 @@ while True:
         if response.tool_calls is None:
             break
         for tool in response.tool_calls:
-            print(f"Command: {json.loads(tool.function.arguments)["command"]}")
+            print(f"Command: {json.loads(tool.function.arguments)['command']}")
             tool_result = run_command(**json.loads(tool.function.arguments))
             print(f"Output: {tool_result}")
             messages.append(
