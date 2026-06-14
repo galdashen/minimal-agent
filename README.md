@@ -1,5 +1,7 @@
 # minimal-agent
 
+最小 coding agent，仅 1 个文件，80 行
+
 ## 快速启动
 
 1. 配置好 API 客户端
