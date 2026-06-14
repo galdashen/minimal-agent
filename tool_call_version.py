@@ -12,7 +12,7 @@ tools = [
                 "properties": {
                     "command": {
                         "type": "string",
-                        "description": "你需要运行的 pwsh 命令",
+                        "description": "需要运行的 pwsh 命令",
                     },
                 },
                 "required": ["command"],
